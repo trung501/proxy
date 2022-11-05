@@ -5,7 +5,7 @@ import argparse, os, random, sys, requests
 from socketserver import ThreadingMixIn
 import threading
 
-hostname = 'en.wikipedia.org'
+hostname = '10.254.5.2:4001
 
 RESPONSE_BLACKLIST=['ASCIS{','ascis{']
 PORT_RQ=''
