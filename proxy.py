@@ -113,9 +113,9 @@ class ProxyHTTPRequestHandler(BaseHTTPRequestHandler):
 
 def parse_args(argv=sys.argv[1:]):
     parser = argparse.ArgumentParser(description='Proxy HTTP requests')
-    parser.add_argument('--port', dest='port', type=int, default=9999,
+    parser.add_argument('--port', dest='port', type=int, default=9001,
                         help='serve HTTP requests on specified port (default: random)')
-    parser.add_argument('--hostname', dest='hostname', type=str, default='en.wikipedia.org',
+    parser.add_argument('--hostname', dest='hostname', type=str, default='10.254.5.2:4001',
                         help='hostname to be processd (default: en.wikipedia.org)')
     args = parser.parse_args(argv)
     return args
